@@ -4,11 +4,15 @@
 
 using namespace std;
 
-int main(int argc, char **argv )
+int main(int argc, char **argv[] )
 {
 	int i;
-	int N;
+	int N=100;
 	N=fork();
+        N=atoi(argv[1]);
+
+
+	
 	if(N>0)
 	{
 		for(i=0;i<2*N;i++)
